@@ -7,6 +7,8 @@
 //
 
 #include "PriorityQueue.h"
+#include "sort.h"
+#include "help.h"
 
 PriorityQueue* makePriorityQueue(int capacity){
     PriorityQueue *q = new PriorityQueue();
@@ -91,4 +93,29 @@ void tesetPriorityQueue(){
     printf("min:%d\n", deleteMin(q));
     printf("min:%d\n", deleteMin(q));
     printf("min:%d\n", deleteMin(q));
+}
+
+void testFindKthMax(){
+//    int a[15] = {34, 23, 214, 23, 231, 345, 23, 22, 23, 1, 4, 2, 3, 6, 5};
+    int a[] = {34, 23, 214, 23, 231, 345};
+    int k = 3;
+    
+    intersectionSort(a, k);
+    inverse(a, k);
+    
+    int tmp;
+    int j;
+    for (int i = k; i < 6; i++) {
+        tmp = a[i];
+        
+        for (j=k-1; j>=0; j--) {
+            if (a[j] < tmp) {
+                a[j+1] = a[j];
+            }
+        }
+        
+        a[j+1] = tmp;
+    }
+    
+    printf("%dth max: %d\n", k, a[k-1]);
 }

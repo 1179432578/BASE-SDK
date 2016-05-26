@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		290209C31CE18945003C622C /* btree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 290209C11CE18945003C622C /* btree.cpp */; };
 		290209C61CE1C440003C622C /* IDecorator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 290209C51CE1C440003C622C /* IDecorator.cpp */; };
+		2902D7BC1CF6B9EA0055FC9F /* help.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2902D7BA1CF6B9EA0055FC9F /* help.cpp */; };
 		2947C3301CDB3C74002A406D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2947C32F1CDB3C74002A406D /* main.cpp */; };
 		29F132F11CDC2AAB006428E2 /* intersectionSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29F132EF1CDC2AAB006428E2 /* intersectionSort.cpp */; };
 		29F132F31CDC338B006428E2 /* shellSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29F132F21CDC338B006428E2 /* shellSort.cpp */; };
@@ -46,6 +47,8 @@
 		290209C21CE18945003C622C /* btree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = btree.h; path = btree/btree.h; sourceTree = "<group>"; };
 		290209C51CE1C440003C622C /* IDecorator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IDecorator.cpp; path = pattern/IDecorator.cpp; sourceTree = "<group>"; };
 		290209C71CE1C46C003C622C /* IDecorator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IDecorator.h; path = pattern/IDecorator.h; sourceTree = "<group>"; };
+		2902D7BA1CF6B9EA0055FC9F /* help.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = help.cpp; path = help/help.cpp; sourceTree = "<group>"; };
+		2902D7BB1CF6B9EA0055FC9F /* help.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = help.h; path = help/help.h; sourceTree = "<group>"; };
 		2947C32C1CDB3C74002A406D /* stl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = stl; sourceTree = BUILT_PRODUCTS_DIR; };
 		2947C32F1CDB3C74002A406D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		29EF1CDB1CF2B46E004FCB2E /* kmp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = kmp.cpp; sourceTree = "<group>"; };
@@ -105,6 +108,15 @@
 			name = btree;
 			sourceTree = "<group>";
 		};
+		2902D7B91CF6B9B40055FC9F /* help */ = {
+			isa = PBXGroup;
+			children = (
+				2902D7BA1CF6B9EA0055FC9F /* help.cpp */,
+				2902D7BB1CF6B9EA0055FC9F /* help.h */,
+			);
+			name = help;
+			sourceTree = "<group>";
+		};
 		2947C3231CDB3C74002A406D = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +136,7 @@
 		2947C32E1CDB3C74002A406D /* stl */ = {
 			isa = PBXGroup;
 			children = (
+				2902D7B91CF6B9B40055FC9F /* help */,
 				29EF1CDD1CF2B494004FCB2E /* huffman */,
 				29EF1CD71CF2B46E004FCB2E /* kmp */,
 				F687280A1CF1A94B00085AFF /* greedy */,
@@ -313,6 +326,7 @@
 			files = (
 				F606311F1CEB74DD00F87496 /* hashtable.cpp in Sources */,
 				29F132FA1CDC7833006428E2 /* Encryption.cpp in Sources */,
+				2902D7BC1CF6B9EA0055FC9F /* help.cpp in Sources */,
 				F60631231CEB755900F87496 /* linkedlist.cpp in Sources */,
 				F68728161CF1E2C400085AFF /* command.cpp in Sources */,
 				F66A0F7A1CDE07C900D1BD06 /* heapSort.cpp in Sources */,

@@ -26,6 +26,5 @@ int deleteMin(PriorityQueue *q);
 
 void tesetPriorityQueue();
 
-
-
+void testFindKthMax();
 #endif /* PriorityQueue_hpp */

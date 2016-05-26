@@ -59,6 +59,6 @@ int main(int argc, const char * argv[]) {
 //    int *a;
 //    calculateFunExcuteTime([&a](){a = generateLargeArray(SIZE);}, "generateLargeArray");
     
-    testCommand();
+    testFindKthMax();
     
 }
