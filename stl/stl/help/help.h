@@ -16,6 +16,10 @@
  *
  */
 
+//翻转数组
 void inverse(int a[], int n);
+
+//遍历数组
+void visit(int a[], int);
 
 #endif /* help_hpp */

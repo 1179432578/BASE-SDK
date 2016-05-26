@@ -9,6 +9,7 @@
 #include "PriorityQueue.h"
 #include "sort.h"
 #include "help.h"
+#include <string.h>
 
 PriorityQueue* makePriorityQueue(int capacity){
     PriorityQueue *q = new PriorityQueue();
@@ -95,27 +96,101 @@ void tesetPriorityQueue(){
     printf("min:%d\n", deleteMin(q));
 }
 
-void testFindKthMax(){
-//    int a[15] = {34, 23, 214, 23, 231, 345, 23, 22, 23, 1, 4, 2, 3, 6, 5};
-    int a[] = {34, 23, 214, 23, 231, 345};
-    int k = 3;
-    
+int findKthMaxWithArray(int a[], int n, int k){
     intersectionSort(a, k);
     inverse(a, k);
     
     int tmp;
     int j;
-    for (int i = k; i < 6; i++) {
+    for (int i = k; i < n; i++) {
         tmp = a[i];
         
         for (j=k-1; j>=0; j--) {
             if (a[j] < tmp) {
                 a[j+1] = a[j];
             }
+            else{
+                break;
+            }
+            
         }
         
         a[j+1] = tmp;
     }
     
-    printf("%dth max: %d\n", k, a[k-1]);
+    return a[k-1];
+}
+
+MaxHeap* buildMaxHeap(int a[], int n){
+    MaxHeap *heap = new MaxHeap;
+    heap->count = n;
+    heap->arr = new int[n+1];//a[0]不存储数据
+    
+    memcpy(heap->arr+1, a, n * sizeof(int));
+    
+    //下滤，大的漂上来
+    for (int i=n/2; i>=1; i--) {
+        int key = heap->arr[i];
+        int child = 2 * i;
+        while (child <= n) {
+            if (child+1<=n && heap->arr[child+1] > heap->arr[child]) {
+                child++;
+            }
+            if (heap->arr[child] > key) {
+                heap->arr[child/2] = heap->arr[child];
+                child *= 2;
+            }
+            else{
+                break;
+            }
+        }
+        heap->arr[child/2] = key;
+    }
+    
+    return heap;
+}
+
+int deleteMax(MaxHeap *heap){
+    int max = heap->arr[1];
+
+    //下滤
+    int key = heap->arr[heap->count--];
+    int child = 2;
+    while (child <= heap->count) {
+        if (child+1<=heap->count && heap->arr[child+1]>heap->arr[child]) {
+            child++;
+        }
+        if (heap->arr[child] > key) {
+            heap->arr[child/2] = heap->arr[child];
+            child *= 2;
+        }
+        else{
+            break;
+        }
+    }
+    
+    heap->arr[child/2] = key;
+    
+    return max;
+}
+
+int findKthMax(int a[], int n, int k){
+    MaxHeap *heap = buildMaxHeap(a, n);
+    
+    int max;
+    for (int i=0; i<k; i++) {
+        max = deleteMax(heap);
+        
+    }
+    
+    return max;
+}
+
+void testFindKthMax(){
+    int a[] = {34, 23, 214, 23, 231, 345, 23, 22, 23, 1, 4, 2, 3, 6, 5};
+    int k = 15;
+    
+    int kth = findKthMax(a, 15, k);
+    
+    printf("%dth: %d\n", k, kth);
 }

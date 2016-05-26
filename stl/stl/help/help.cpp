@@ -16,3 +16,9 @@ void inverse(int a[], int n){
         a[i] = tmp;
     }
 }
+
+void visit(int a[], int n){
+    for (int i=0; i<n; i++) {
+        printf(i != n-1 ? "%d ":"%d\n", a[i]);
+    }
+}
