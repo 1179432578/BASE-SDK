@@ -24,6 +24,7 @@
 #include "knapsack.h"
 #include "singleton.h"
 #include "command.h"
+#include "graph.h"
 
 void print(int a[], int n){
     int i = 0;
@@ -59,6 +60,6 @@ int main(int argc, const char * argv[]) {
 //    int *a;
 //    calculateFunExcuteTime([&a](){a = generateLargeArray(SIZE);}, "generateLargeArray");
     
-    testFindKthMax();
+    testGraph();
     
 }

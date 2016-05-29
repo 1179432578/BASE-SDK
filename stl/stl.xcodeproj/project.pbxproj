@@ -21,6 +21,7 @@
 		F650CA0B1CE36FFB0036BBA3 /* factorymethod.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F650CA091CE36FFB0036BBA3 /* factorymethod.cpp */; };
 		F655A40D1CF0C031006CA54D /* PriorityQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F655A40B1CF0C031006CA54D /* PriorityQueue.cpp */; };
 		F65632AA1CDEE0A800E37C1C /* quickSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F65632A91CDEE0A800E37C1C /* quickSort.cpp */; };
+		F65E77941CFB16A700B2F7AA /* graph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F65E77921CFB16A700B2F7AA /* graph.cpp */; };
 		F66A0F7A1CDE07C900D1BD06 /* heapSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F66A0F781CDE07C900D1BD06 /* heapSort.cpp */; };
 		F66A0F7C1CDE2E3700D1BD06 /* mergeSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F66A0F7B1CDE2E3700D1BD06 /* mergeSort.cpp */; };
 		F67364AA1CECB0F200650688 /* stack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F67364A81CECB0F200650688 /* stack.cpp */; };
@@ -73,6 +74,8 @@
 		F655A40B1CF0C031006CA54D /* PriorityQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PriorityQueue.cpp; path = priorityqueue/PriorityQueue.cpp; sourceTree = "<group>"; };
 		F655A40C1CF0C031006CA54D /* PriorityQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PriorityQueue.h; path = priorityqueue/PriorityQueue.h; sourceTree = "<group>"; };
 		F65632A91CDEE0A800E37C1C /* quickSort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = quickSort.cpp; path = sort/quickSort.cpp; sourceTree = "<group>"; };
+		F65E77921CFB16A700B2F7AA /* graph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = graph.cpp; path = graph/graph.cpp; sourceTree = "<group>"; };
+		F65E77931CFB16A700B2F7AA /* graph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = graph.h; path = graph/graph.h; sourceTree = "<group>"; };
 		F66A0F781CDE07C900D1BD06 /* heapSort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = heapSort.cpp; path = sort/heapSort.cpp; sourceTree = "<group>"; };
 		F66A0F7B1CDE2E3700D1BD06 /* mergeSort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mergeSort.cpp; path = sort/mergeSort.cpp; sourceTree = "<group>"; };
 		F67364A81CECB0F200650688 /* stack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = stack.cpp; path = stack/stack.cpp; sourceTree = "<group>"; };
@@ -136,6 +139,7 @@
 		2947C32E1CDB3C74002A406D /* stl */ = {
 			isa = PBXGroup;
 			children = (
+				F65E77911CFB161200B2F7AA /* graph */,
 				2902D7B91CF6B9B40055FC9F /* help */,
 				29EF1CDD1CF2B494004FCB2E /* huffman */,
 				29EF1CD71CF2B46E004FCB2E /* kmp */,
@@ -238,6 +242,15 @@
 				F655A40C1CF0C031006CA54D /* PriorityQueue.h */,
 			);
 			name = priorityqueue;
+			sourceTree = "<group>";
+		};
+		F65E77911CFB161200B2F7AA /* graph */ = {
+			isa = PBXGroup;
+			children = (
+				F65E77921CFB16A700B2F7AA /* graph.cpp */,
+				F65E77931CFB16A700B2F7AA /* graph.h */,
+			);
+			name = graph;
 			sourceTree = "<group>";
 		};
 		F67364A71CECB0DF00650688 /* stack */ = {
@@ -344,6 +357,7 @@
 				290209C61CE1C440003C622C /* IDecorator.cpp in Sources */,
 				F67364AA1CECB0F200650688 /* stack.cpp in Sources */,
 				F68728131CF1D09100085AFF /* singleton.cpp in Sources */,
+				F65E77941CFB16A700B2F7AA /* graph.cpp in Sources */,
 				29F132F31CDC338B006428E2 /* shellSort.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
