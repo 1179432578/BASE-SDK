@@ -25,6 +25,7 @@
 		F66A0F7A1CDE07C900D1BD06 /* heapSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F66A0F781CDE07C900D1BD06 /* heapSort.cpp */; };
 		F66A0F7C1CDE2E3700D1BD06 /* mergeSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F66A0F7B1CDE2E3700D1BD06 /* mergeSort.cpp */; };
 		F67364AA1CECB0F200650688 /* stack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F67364A81CECB0F200650688 /* stack.cpp */; };
+		F676CC221CFC91FB003C471E /* list_reserve.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F676CC201CFC91FB003C471E /* list_reserve.cpp */; };
 		F687280D1CF1A9BB00085AFF /* activity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F687280B1CF1A9BB00085AFF /* activity.cpp */; };
 		F68728101CF1AD5C00085AFF /* knapsack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F687280E1CF1AD5C00085AFF /* knapsack.cpp */; };
 		F68728131CF1D09100085AFF /* singleton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F68728111CF1D09100085AFF /* singleton.cpp */; };
@@ -81,6 +82,8 @@
 		F67364A81CECB0F200650688 /* stack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = stack.cpp; path = stack/stack.cpp; sourceTree = "<group>"; };
 		F67364A91CECB0F200650688 /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stack.h; path = stack/stack.h; sourceTree = "<group>"; };
 		F67364AD1CECB63700650688 /* macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = macro.h; sourceTree = "<group>"; };
+		F676CC201CFC91FB003C471E /* list_reserve.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = list_reserve.cpp; path = acm/list_reserve.cpp; sourceTree = "<group>"; };
+		F676CC211CFC91FB003C471E /* list_reserve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = list_reserve.h; path = acm/list_reserve.h; sourceTree = "<group>"; };
 		F687280B1CF1A9BB00085AFF /* activity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = activity.cpp; path = greedy/activity.cpp; sourceTree = "<group>"; };
 		F687280C1CF1A9BB00085AFF /* activity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = activity.h; path = greedy/activity.h; sourceTree = "<group>"; };
 		F687280E1CF1AD5C00085AFF /* knapsack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = knapsack.cpp; path = greedy/knapsack.cpp; sourceTree = "<group>"; };
@@ -123,6 +126,7 @@
 		2947C3231CDB3C74002A406D = {
 			isa = PBXGroup;
 			children = (
+				F676CC1F1CFC91C7003C471E /* acm */,
 				2947C32E1CDB3C74002A406D /* stl */,
 				2947C32D1CDB3C74002A406D /* Products */,
 			);
@@ -270,6 +274,15 @@
 			name = macro;
 			sourceTree = "<group>";
 		};
+		F676CC1F1CFC91C7003C471E /* acm */ = {
+			isa = PBXGroup;
+			children = (
+				F676CC201CFC91FB003C471E /* list_reserve.cpp */,
+				F676CC211CFC91FB003C471E /* list_reserve.h */,
+			);
+			name = acm;
+			sourceTree = "<group>";
+		};
 		F687280A1CF1A94B00085AFF /* greedy */ = {
 			isa = PBXGroup;
 			children = (
@@ -348,6 +361,7 @@
 				29F132F71CDC6AD6006428E2 /* testPass.cpp in Sources */,
 				29F132FE1CDC8489006428E2 /* observer.cpp in Sources */,
 				29F132F11CDC2AAB006428E2 /* intersectionSort.cpp in Sources */,
+				F676CC221CFC91FB003C471E /* list_reserve.cpp in Sources */,
 				2947C3301CDB3C74002A406D /* main.cpp in Sources */,
 				F655A40D1CF0C031006CA54D /* PriorityQueue.cpp in Sources */,
 				F68728101CF1AD5C00085AFF /* knapsack.cpp in Sources */,
