@@ -26,6 +26,7 @@
 #include "command.h"
 #include "graph.h"
 #include "list_reserve.h"
+#include "divideAndConquer.h"
 
 void print(int a[], int n){
     int i = 0;
@@ -61,6 +62,6 @@ int main(int argc, const char * argv[]) {
 //    int *a;
 //    calculateFunExcuteTime([&a](){a = generateLargeArray(SIZE);}, "generateLargeArray");
     
-    testListReserve();
+    testNeastPoint();
     
 }

@@ -30,6 +30,7 @@
 		F68728101CF1AD5C00085AFF /* knapsack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F687280E1CF1AD5C00085AFF /* knapsack.cpp */; };
 		F68728131CF1D09100085AFF /* singleton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F68728111CF1D09100085AFF /* singleton.cpp */; };
 		F68728161CF1E2C400085AFF /* command.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F68728141CF1E2C400085AFF /* command.cpp */; };
+		F694C8551D007BBD00B039A2 /* divideAndConquer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F694C8531D007BBD00B039A2 /* divideAndConquer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -92,6 +93,8 @@
 		F68728121CF1D09100085AFF /* singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = singleton.h; path = pattern/singleton.h; sourceTree = "<group>"; };
 		F68728141CF1E2C400085AFF /* command.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = command.cpp; path = pattern/command.cpp; sourceTree = "<group>"; };
 		F68728151CF1E2C400085AFF /* command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = command.h; path = pattern/command.h; sourceTree = "<group>"; };
+		F694C8531D007BBD00B039A2 /* divideAndConquer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = divideAndConquer.cpp; path = divideandconquer/divideAndConquer.cpp; sourceTree = "<group>"; };
+		F694C8541D007BBD00B039A2 /* divideAndConquer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = divideAndConquer.h; path = divideandconquer/divideAndConquer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +146,7 @@
 		2947C32E1CDB3C74002A406D /* stl */ = {
 			isa = PBXGroup;
 			children = (
+				F694C8521D007B3200B039A2 /* divide_and_conquer */,
 				F65E77911CFB161200B2F7AA /* graph */,
 				2902D7B91CF6B9B40055FC9F /* help */,
 				29EF1CDD1CF2B494004FCB2E /* huffman */,
@@ -294,6 +298,15 @@
 			name = greedy;
 			sourceTree = "<group>";
 		};
+		F694C8521D007B3200B039A2 /* divide_and_conquer */ = {
+			isa = PBXGroup;
+			children = (
+				F694C8531D007BBD00B039A2 /* divideAndConquer.cpp */,
+				F694C8541D007BBD00B039A2 /* divideAndConquer.h */,
+			);
+			name = divide_and_conquer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -360,6 +373,7 @@
 				F687280D1CF1A9BB00085AFF /* activity.cpp in Sources */,
 				29F132F71CDC6AD6006428E2 /* testPass.cpp in Sources */,
 				29F132FE1CDC8489006428E2 /* observer.cpp in Sources */,
+				F694C8551D007BBD00B039A2 /* divideAndConquer.cpp in Sources */,
 				29F132F11CDC2AAB006428E2 /* intersectionSort.cpp in Sources */,
 				F676CC221CFC91FB003C471E /* list_reserve.cpp in Sources */,
 				2947C3301CDB3C74002A406D /* main.cpp in Sources */,
