@@ -15,6 +15,7 @@
  *
  */
 
+/*链表也需要建立数据结构代码可以更清楚*/
 /*链表节点*/
 typedef struct Node{
     int data;

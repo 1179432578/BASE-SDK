@@ -26,7 +26,10 @@
 #include "command.h"
 #include "graph.h"
 #include "list_reserve.h"
-#include "divideAndConquer.h"
+#include "neastPoint.h"
+#include "binarySerch.h"
+#include "mergeSortAndQuickSort.h"
+
 
 void print(int a[], int n){
     int i = 0;
@@ -57,11 +60,14 @@ void calculateFunExcuteTime(std::function<void()> fun, const char *funName){
     printf("%s: %fs\n", funName, 1.0f * t / CLOCKS_PER_SEC);
 }
 
+extern void testSortLinkedList();
+extern void testFindKthInLinkedList();
+extern void testStackMin();
 int main(int argc, const char * argv[]) {
 //    const int SIZE =100000;
 //    int *a;
 //    calculateFunExcuteTime([&a](){a = generateLargeArray(SIZE);}, "generateLargeArray");
     
-    testNeastPoint();
+    testStackMin();
     
 }

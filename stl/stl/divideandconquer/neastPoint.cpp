@@ -1,13 +1,18 @@
 //
-//  divideAndConquer.cpp
+//  neastPoint.cpp
 //  stl
 //
-//  Created by lewis on 16/6/2.
+//  Created by lewis on 16/6/4.
 //  Copyright © 2016年 鲁飞. All rights reserved.
 //
 
-#include "divideAndConquer.h"
+#include "neastPoint.h"
 #include <math.h>
+
+struct Point{
+    int x;
+    int y;
+};
 
 /*按x坐标进行排序*/
 void sortPoints(int num, Point *points){
@@ -74,7 +79,7 @@ void np(Point pts[], int left, int right, int *p1, int *p2){
                     else{
                         int d2 = sqrt(pow(pts[i].x - pts[j].x, 2) + pow(pts[i].y - pts[j].y, 2));
                         printf("%d %d %d\n", i, j, d2);
-
+                        
                         if (d2 < d) {
                             *p1 = i;
                             *p2 = j;
