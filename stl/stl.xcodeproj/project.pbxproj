@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		290036FF1D0FB7490055B93D /* odd_before_even.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 290036FE1D0FB7490055B93D /* odd_before_even.cpp */; };
+		290037011D0FF0140055B93D /* binary_to_linkedlist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 290037001D0FF0140055B93D /* binary_to_linkedlist.cpp */; };
 		290209C31CE18945003C622C /* btree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 290209C11CE18945003C622C /* btree.cpp */; };
 		290209C61CE1C440003C622C /* IDecorator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 290209C51CE1C440003C622C /* IDecorator.cpp */; };
 		2902D7BC1CF6B9EA0055FC9F /* help.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2902D7BA1CF6B9EA0055FC9F /* help.cpp */; };
@@ -52,6 +54,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		290036FE1D0FB7490055B93D /* odd_before_even.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = odd_before_even.cpp; path = acm/odd_before_even.cpp; sourceTree = "<group>"; };
+		290037001D0FF0140055B93D /* binary_to_linkedlist.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = binary_to_linkedlist.cpp; path = acm/binary_to_linkedlist.cpp; sourceTree = "<group>"; };
 		290209C11CE18945003C622C /* btree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = btree.cpp; path = btree/btree.cpp; sourceTree = "<group>"; };
 		290209C21CE18945003C622C /* btree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = btree.h; path = btree/btree.h; sourceTree = "<group>"; };
 		290209C51CE1C440003C622C /* IDecorator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IDecorator.cpp; path = pattern/IDecorator.cpp; sourceTree = "<group>"; };
@@ -325,6 +329,8 @@
 				F64B1A0F1D08553E00BDF8F8 /* sort_link_list.cpp */,
 				F64B1A121D0868DC00BDF8F8 /* find_reservekth_linklist.cpp */,
 				F64B1A151D0870D100BDF8F8 /* stack_min.cpp */,
+				290036FE1D0FB7490055B93D /* odd_before_even.cpp */,
+				290037001D0FF0140055B93D /* binary_to_linkedlist.cpp */,
 			);
 			name = acm;
 			sourceTree = "<group>";
@@ -413,6 +419,7 @@
 			files = (
 				F606311F1CEB74DD00F87496 /* hashtable.cpp in Sources */,
 				29F132FA1CDC7833006428E2 /* Encryption.cpp in Sources */,
+				290037011D0FF0140055B93D /* binary_to_linkedlist.cpp in Sources */,
 				F6502B931D02DF6A009AE6DA /* bigInteger.cpp in Sources */,
 				F6502B8A1D02DC58009AE6DA /* neastPoint.cpp in Sources */,
 				2902D7BC1CF6B9EA0055FC9F /* help.cpp in Sources */,
@@ -436,6 +443,7 @@
 				F6502B901D02DF21009AE6DA /* mergeSortAndQuickSort.cpp in Sources */,
 				F6502B8D1D02DE8F009AE6DA /* binarySerch.cpp in Sources */,
 				F66A0F7C1CDE2E3700D1BD06 /* mergeSort.cpp in Sources */,
+				290036FF1D0FB7490055B93D /* odd_before_even.cpp in Sources */,
 				290209C61CE1C440003C622C /* IDecorator.cpp in Sources */,
 				F67364AA1CECB0F200650688 /* stack.cpp in Sources */,
 				F68728131CF1D09100085AFF /* singleton.cpp in Sources */,

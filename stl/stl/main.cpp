@@ -63,11 +63,13 @@ void calculateFunExcuteTime(std::function<void()> fun, const char *funName){
 extern void testSortLinkedList();
 extern void testFindKthInLinkedList();
 extern void testStackMin();
+extern void testAdjustArray();
+extern void testBtreeToLinkedlist();
 int main(int argc, const char * argv[]) {
 //    const int SIZE =100000;
 //    int *a;
 //    calculateFunExcuteTime([&a](){a = generateLargeArray(SIZE);}, "generateLargeArray");
     
-    testStackMin();
+    testBtreeToLinkedlist();
     
 }
