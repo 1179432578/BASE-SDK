@@ -39,6 +39,7 @@
 		F68728101CF1AD5C00085AFF /* knapsack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F687280E1CF1AD5C00085AFF /* knapsack.cpp */; };
 		F68728131CF1D09100085AFF /* singleton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F68728111CF1D09100085AFF /* singleton.cpp */; };
 		F68728161CF1E2C400085AFF /* command.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F68728141CF1E2C400085AFF /* command.cpp */; };
+		F6C19FD61D1044B600380606 /* btree_findLCA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6C19FD51D1044B600380606 /* btree_findLCA.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -114,6 +115,7 @@
 		F68728121CF1D09100085AFF /* singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = singleton.h; path = pattern/singleton.h; sourceTree = "<group>"; };
 		F68728141CF1E2C400085AFF /* command.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = command.cpp; path = pattern/command.cpp; sourceTree = "<group>"; };
 		F68728151CF1E2C400085AFF /* command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = command.h; path = pattern/command.h; sourceTree = "<group>"; };
+		F6C19FD51D1044B600380606 /* btree_findLCA.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = btree_findLCA.cpp; path = acm/btree_findLCA.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -331,6 +333,7 @@
 				F64B1A151D0870D100BDF8F8 /* stack_min.cpp */,
 				290036FE1D0FB7490055B93D /* odd_before_even.cpp */,
 				290037001D0FF0140055B93D /* binary_to_linkedlist.cpp */,
+				F6C19FD51D1044B600380606 /* btree_findLCA.cpp */,
 			);
 			name = acm;
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 				F64B1A111D08553E00BDF8F8 /* sort_link_list.cpp in Sources */,
 				F66A0F7A1CDE07C900D1BD06 /* heapSort.cpp in Sources */,
 				F65632AA1CDEE0A800E37C1C /* quickSort.cpp in Sources */,
+				F6C19FD61D1044B600380606 /* btree_findLCA.cpp in Sources */,
 				F687280D1CF1A9BB00085AFF /* activity.cpp in Sources */,
 				29F132F71CDC6AD6006428E2 /* testPass.cpp in Sources */,
 				F64B1A141D0868DC00BDF8F8 /* find_reservekth_linklist.cpp in Sources */,
