@@ -65,11 +65,12 @@ extern void testFindKthInLinkedList();
 extern void testStackMin();
 extern void testAdjustArray();
 extern void testBtreeToLinkedlist();
+extern void testVisitThreadBtree();
 int main(int argc, const char * argv[]) {
 //    const int SIZE =100000;
 //    int *a;
 //    calculateFunExcuteTime([&a](){a = generateLargeArray(SIZE);}, "generateLargeArray");
     
-    testBtreeToLinkedlist();
+    testVisitThreadBtree();
     
 }

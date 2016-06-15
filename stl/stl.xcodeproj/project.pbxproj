@@ -13,6 +13,8 @@
 		290209C61CE1C440003C622C /* IDecorator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 290209C51CE1C440003C622C /* IDecorator.cpp */; };
 		2902D7BC1CF6B9EA0055FC9F /* help.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2902D7BA1CF6B9EA0055FC9F /* help.cpp */; };
 		2947C3301CDB3C74002A406D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2947C32F1CDB3C74002A406D /* main.cpp */; };
+		29E652C11D113B9E00605F2E /* indexBtree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29E652C01D113B9D00605F2E /* indexBtree.cpp */; };
+		29E652C31D11550B00605F2E /* sortedlist_to_bst.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29E652C21D11550B00605F2E /* sortedlist_to_bst.cpp */; };
 		29F132F11CDC2AAB006428E2 /* intersectionSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29F132EF1CDC2AAB006428E2 /* intersectionSort.cpp */; };
 		29F132F31CDC338B006428E2 /* shellSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29F132F21CDC338B006428E2 /* shellSort.cpp */; };
 		29F132F71CDC6AD6006428E2 /* testPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29F132F51CDC6AD6006428E2 /* testPass.cpp */; };
@@ -65,6 +67,8 @@
 		2902D7BB1CF6B9EA0055FC9F /* help.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = help.h; path = help/help.h; sourceTree = "<group>"; };
 		2947C32C1CDB3C74002A406D /* stl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = stl; sourceTree = BUILT_PRODUCTS_DIR; };
 		2947C32F1CDB3C74002A406D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = stl/main.cpp; sourceTree = "<group>"; };
+		29E652C01D113B9D00605F2E /* indexBtree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = indexBtree.cpp; path = acm/indexBtree.cpp; sourceTree = "<group>"; };
+		29E652C21D11550B00605F2E /* sortedlist_to_bst.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sortedlist_to_bst.cpp; path = acm/sortedlist_to_bst.cpp; sourceTree = "<group>"; };
 		29EF1CDB1CF2B46E004FCB2E /* kmp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = kmp.cpp; sourceTree = "<group>"; };
 		29EF1CDC1CF2B46E004FCB2E /* kmp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kmp.h; sourceTree = "<group>"; };
 		29EF1CDE1CF2B494004FCB2E /* huffman.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = huffman.cpp; sourceTree = "<group>"; };
@@ -334,6 +338,8 @@
 				290036FE1D0FB7490055B93D /* odd_before_even.cpp */,
 				290037001D0FF0140055B93D /* binary_to_linkedlist.cpp */,
 				F6C19FD51D1044B600380606 /* btree_findLCA.cpp */,
+				29E652C01D113B9D00605F2E /* indexBtree.cpp */,
+				29E652C21D11550B00605F2E /* sortedlist_to_bst.cpp */,
 			);
 			name = acm;
 			sourceTree = "<group>";
@@ -420,6 +426,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29E652C31D11550B00605F2E /* sortedlist_to_bst.cpp in Sources */,
 				F606311F1CEB74DD00F87496 /* hashtable.cpp in Sources */,
 				29F132FA1CDC7833006428E2 /* Encryption.cpp in Sources */,
 				290037011D0FF0140055B93D /* binary_to_linkedlist.cpp in Sources */,
@@ -429,6 +436,7 @@
 				F64B1A161D0870D100BDF8F8 /* stack_min.cpp in Sources */,
 				F60631231CEB755900F87496 /* linkedlist.cpp in Sources */,
 				F68728161CF1E2C400085AFF /* command.cpp in Sources */,
+				29E652C11D113B9E00605F2E /* indexBtree.cpp in Sources */,
 				F64B1A111D08553E00BDF8F8 /* sort_link_list.cpp in Sources */,
 				F66A0F7A1CDE07C900D1BD06 /* heapSort.cpp in Sources */,
 				F65632AA1CDEE0A800E37C1C /* quickSort.cpp in Sources */,
