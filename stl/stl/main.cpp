@@ -14,21 +14,6 @@
 #include "testPass.h"
 
 #include <functional>
-#include "IDecorator.h"
-#include "factorymethod.h"
-#include "hashtable.h"
-#include "linkedlist.h"
-#include "stack.h"
-#include "PriorityQueue.h"
-#include "activity.h"
-#include "knapsack.h"
-#include "singleton.h"
-#include "command.h"
-#include "graph.h"
-#include "list_reserve.h"
-#include "neastPoint.h"
-#include "binarySerch.h"
-#include "mergeSortAndQuickSort.h"
 
 
 void print(int a[], int n){
@@ -66,11 +51,13 @@ extern void testStackMin();
 extern void testAdjustArray();
 extern void testBtreeToLinkedlist();
 extern void testVisitThreadBtree();
+extern void testPreOreder2();
+extern void testFindAllAncestor();
 int main(int argc, const char * argv[]) {
 //    const int SIZE =100000;
 //    int *a;
 //    calculateFunExcuteTime([&a](){a = generateLargeArray(SIZE);}, "generateLargeArray");
     
-    testVisitThreadBtree();
+    testFindAllAncestor();
     
 }

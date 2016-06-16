@@ -20,6 +20,8 @@
 		29F132F71CDC6AD6006428E2 /* testPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29F132F51CDC6AD6006428E2 /* testPass.cpp */; };
 		29F132FA1CDC7833006428E2 /* Encryption.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29F132F81CDC7833006428E2 /* Encryption.cpp */; };
 		29F132FE1CDC8489006428E2 /* observer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29F132FC1CDC8489006428E2 /* observer.cpp */; };
+		29F4C15F1D1243E8005D09F6 /* norecursion_visit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29F4C15E1D1243E8005D09F6 /* norecursion_visit.cpp */; };
+		29F4C1611D127E64005D09F6 /* findAllAncestor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29F4C1601D127E64005D09F6 /* findAllAncestor.cpp */; };
 		F606311F1CEB74DD00F87496 /* hashtable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F606311D1CEB74B500F87496 /* hashtable.cpp */; };
 		F60631231CEB755900F87496 /* linkedlist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F60631211CEB755900F87496 /* linkedlist.cpp */; };
 		F64B1A111D08553E00BDF8F8 /* sort_link_list.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F64B1A0F1D08553E00BDF8F8 /* sort_link_list.cpp */; };
@@ -82,6 +84,8 @@
 		29F132F91CDC7833006428E2 /* Encryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Encryption.h; path = password/Encryption.h; sourceTree = "<group>"; };
 		29F132FC1CDC8489006428E2 /* observer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = observer.cpp; path = pattern/observer.cpp; sourceTree = "<group>"; };
 		29F132FD1CDC8489006428E2 /* pattern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pattern.h; path = pattern/pattern.h; sourceTree = "<group>"; };
+		29F4C15E1D1243E8005D09F6 /* norecursion_visit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = norecursion_visit.cpp; path = acm/btree/norecursion_visit.cpp; sourceTree = "<group>"; };
+		29F4C1601D127E64005D09F6 /* findAllAncestor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = findAllAncestor.cpp; path = acm/btree/findAllAncestor.cpp; sourceTree = "<group>"; };
 		F606311D1CEB74B500F87496 /* hashtable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = hashtable.cpp; sourceTree = "<group>"; };
 		F606311E1CEB74B500F87496 /* hashtable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hashtable.h; sourceTree = "<group>"; };
 		F60631211CEB755900F87496 /* linkedlist.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = linkedlist.cpp; path = linkedlist/linkedlist.cpp; sourceTree = "<group>"; };
@@ -253,6 +257,15 @@
 			name = pattern;
 			sourceTree = "<group>";
 		};
+		29F4C15D1D12431C005D09F6 /* btree */ = {
+			isa = PBXGroup;
+			children = (
+				29F4C15E1D1243E8005D09F6 /* norecursion_visit.cpp */,
+				29F4C1601D127E64005D09F6 /* findAllAncestor.cpp */,
+			);
+			name = btree;
+			sourceTree = "<group>";
+		};
 		F606311C1CEB74B500F87496 /* hashtable */ = {
 			isa = PBXGroup;
 			children = (
@@ -330,6 +343,7 @@
 		F676CC1F1CFC91C7003C471E /* acm */ = {
 			isa = PBXGroup;
 			children = (
+				29F4C15D1D12431C005D09F6 /* btree */,
 				F676CC201CFC91FB003C471E /* list_reserve.cpp */,
 				F676CC211CFC91FB003C471E /* list_reserve.h */,
 				F64B1A0F1D08553E00BDF8F8 /* sort_link_list.cpp */,
@@ -450,6 +464,7 @@
 				2947C3301CDB3C74002A406D /* main.cpp in Sources */,
 				F655A40D1CF0C031006CA54D /* PriorityQueue.cpp in Sources */,
 				F68728101CF1AD5C00085AFF /* knapsack.cpp in Sources */,
+				29F4C1611D127E64005D09F6 /* findAllAncestor.cpp in Sources */,
 				F650CA0B1CE36FFB0036BBA3 /* factorymethod.cpp in Sources */,
 				290209C31CE18945003C622C /* btree.cpp in Sources */,
 				F6502B901D02DF21009AE6DA /* mergeSortAndQuickSort.cpp in Sources */,
@@ -457,6 +472,7 @@
 				F66A0F7C1CDE2E3700D1BD06 /* mergeSort.cpp in Sources */,
 				290036FF1D0FB7490055B93D /* odd_before_even.cpp in Sources */,
 				290209C61CE1C440003C622C /* IDecorator.cpp in Sources */,
+				29F4C15F1D1243E8005D09F6 /* norecursion_visit.cpp in Sources */,
 				F67364AA1CECB0F200650688 /* stack.cpp in Sources */,
 				F68728131CF1D09100085AFF /* singleton.cpp in Sources */,
 				F65E77941CFB16A700B2F7AA /* graph.cpp in Sources */,
