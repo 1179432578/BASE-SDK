@@ -15,6 +15,8 @@
 		2947C3301CDB3C74002A406D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2947C32F1CDB3C74002A406D /* main.cpp */; };
 		29E652C11D113B9E00605F2E /* indexBtree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29E652C01D113B9D00605F2E /* indexBtree.cpp */; };
 		29E652C31D11550B00605F2E /* sortedlist_to_bst.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29E652C21D11550B00605F2E /* sortedlist_to_bst.cpp */; };
+		29EF70721D138D6A00CC0C02 /* infixToPostfix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29EF70711D138D6A00CC0C02 /* infixToPostfix.cpp */; };
+		29EF70741D13ABCF00CC0C02 /* binarySearch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29EF70731D13ABCF00CC0C02 /* binarySearch.cpp */; };
 		29F132F11CDC2AAB006428E2 /* intersectionSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29F132EF1CDC2AAB006428E2 /* intersectionSort.cpp */; };
 		29F132F31CDC338B006428E2 /* shellSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29F132F21CDC338B006428E2 /* shellSort.cpp */; };
 		29F132F71CDC6AD6006428E2 /* testPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29F132F51CDC6AD6006428E2 /* testPass.cpp */; };
@@ -75,6 +77,8 @@
 		29EF1CDC1CF2B46E004FCB2E /* kmp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kmp.h; sourceTree = "<group>"; };
 		29EF1CDE1CF2B494004FCB2E /* huffman.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = huffman.cpp; sourceTree = "<group>"; };
 		29EF1CDF1CF2B494004FCB2E /* huffman.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = huffman.h; sourceTree = "<group>"; };
+		29EF70711D138D6A00CC0C02 /* infixToPostfix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = infixToPostfix.cpp; path = acm/btree/infixToPostfix.cpp; sourceTree = "<group>"; };
+		29EF70731D13ABCF00CC0C02 /* binarySearch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = binarySearch.cpp; path = acm/search/binarySearch.cpp; sourceTree = SOURCE_ROOT; };
 		29F132EF1CDC2AAB006428E2 /* intersectionSort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = intersectionSort.cpp; path = sort/intersectionSort.cpp; sourceTree = "<group>"; };
 		29F132F01CDC2AAB006428E2 /* sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sort.h; path = sort/sort.h; sourceTree = "<group>"; };
 		29F132F21CDC338B006428E2 /* shellSort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = shellSort.cpp; path = sort/shellSort.cpp; sourceTree = "<group>"; };
@@ -178,7 +182,6 @@
 			isa = PBXGroup;
 			children = (
 				F6502B951D02E060009AE6DA /* iterator */,
-				F6502B941D02E039009AE6DA /* search */,
 				F694C8521D007B3200B039A2 /* divide_and_conquer */,
 				F65E77911CFB161200B2F7AA /* graph */,
 				2902D7B91CF6B9B40055FC9F /* help */,
@@ -262,6 +265,7 @@
 			children = (
 				29F4C15E1D1243E8005D09F6 /* norecursion_visit.cpp */,
 				29F4C1601D127E64005D09F6 /* findAllAncestor.cpp */,
+				29EF70711D138D6A00CC0C02 /* infixToPostfix.cpp */,
 			);
 			name = btree;
 			sourceTree = "<group>";
@@ -287,8 +291,10 @@
 		F6502B941D02E039009AE6DA /* search */ = {
 			isa = PBXGroup;
 			children = (
+				29EF70731D13ABCF00CC0C02 /* binarySearch.cpp */,
 			);
 			name = search;
+			path = stl;
 			sourceTree = "<group>";
 		};
 		F6502B951D02E060009AE6DA /* iterator */ = {
@@ -343,6 +349,7 @@
 		F676CC1F1CFC91C7003C471E /* acm */ = {
 			isa = PBXGroup;
 			children = (
+				F6502B941D02E039009AE6DA /* search */,
 				29F4C15D1D12431C005D09F6 /* btree */,
 				F676CC201CFC91FB003C471E /* list_reserve.cpp */,
 				F676CC211CFC91FB003C471E /* list_reserve.h */,
@@ -454,6 +461,7 @@
 				F64B1A111D08553E00BDF8F8 /* sort_link_list.cpp in Sources */,
 				F66A0F7A1CDE07C900D1BD06 /* heapSort.cpp in Sources */,
 				F65632AA1CDEE0A800E37C1C /* quickSort.cpp in Sources */,
+				29EF70741D13ABCF00CC0C02 /* binarySearch.cpp in Sources */,
 				F6C19FD61D1044B600380606 /* btree_findLCA.cpp in Sources */,
 				F687280D1CF1A9BB00085AFF /* activity.cpp in Sources */,
 				29F132F71CDC6AD6006428E2 /* testPass.cpp in Sources */,
@@ -467,6 +475,7 @@
 				29F4C1611D127E64005D09F6 /* findAllAncestor.cpp in Sources */,
 				F650CA0B1CE36FFB0036BBA3 /* factorymethod.cpp in Sources */,
 				290209C31CE18945003C622C /* btree.cpp in Sources */,
+				29EF70721D138D6A00CC0C02 /* infixToPostfix.cpp in Sources */,
 				F6502B901D02DF21009AE6DA /* mergeSortAndQuickSort.cpp in Sources */,
 				F6502B8D1D02DE8F009AE6DA /* binarySerch.cpp in Sources */,
 				F66A0F7C1CDE2E3700D1BD06 /* mergeSort.cpp in Sources */,
