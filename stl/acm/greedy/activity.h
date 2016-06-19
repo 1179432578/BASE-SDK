@@ -12,7 +12,7 @@
 #include <stdio.h>
 
 /*算法：活动安排
- *
+ *http://www.acmerblog.com/greedy-activity-selection-5199.html
  *
  */
 

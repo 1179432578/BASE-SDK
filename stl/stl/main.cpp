@@ -53,12 +53,12 @@ extern void testBtreeToLinkedlist();
 extern void testVisitThreadBtree();
 extern void testPreOreder2();
 extern void testFindAllAncestor();
-extern void testSearchLessOrEqual();
+extern void testCalDistance();
 int main(int argc, const char * argv[]) {
 //    const int SIZE =100000;
 //    int *a;
 //    calculateFunExcuteTime([&a](){a = generateLargeArray(SIZE);}, "generateLargeArray");
     
-    testSearchLessOrEqual();
+    testCalDistance();
     
 }

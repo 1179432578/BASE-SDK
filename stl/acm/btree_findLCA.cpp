@@ -13,8 +13,9 @@
 
 struct BinaryNode{
     int val;
-    BinaryNode *left = NULL;
+    BinaryNode *left;
     BinaryNode *right = NULL;
+    BinaryNode(int v):val(v), left(NULL), right(NULL){}
 };
 
 //使用递归的方法查找lca，如果结点的左子树与右子树分别包含n1与n2，那么此结点就是lca
@@ -32,4 +33,49 @@ BinaryNode* findLCA(BinaryNode *root, int n1, int n2){
     }
     
     return leftLca ? leftLca : rightLca;
+}
+
+//计算父结点到子结点距离
+int calDis(BinaryNode *node, int n1){
+    if (!node) {
+        return -1;//assert(node)
+    }
+    if (node->val == n1) {
+        return 0;
+    }
+    
+    int dst = calDis(node->left, n1);//左树中查找
+    if (dst != -1) {
+        return dst + 1;
+    }
+    
+    dst = calDis(node->right, n1);//在右树种查找
+    if (dst != -1) {
+        return dst + 1;
+    }
+    
+    return -1;
+}
+
+//计算两个结点距离
+int calDistance(BinaryNode *root, int n1, int n2){
+    BinaryNode *lca = findLCA(root, n1, n2);
+    
+    int dst1 = calDis(lca, n1);
+    int dst2 = calDis(lca, n2);
+    
+    return dst1 + dst2;
+}
+
+void testCalDistance(){
+    /*
+        1
+       / \
+      2   3
+     */
+    BinaryNode root(1);
+    root.left = new BinaryNode(2);
+    root.right = new BinaryNode(3);
+    
+    printf("%d\n", calDistance(&root, 1, 3));
 }
