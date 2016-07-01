@@ -24,6 +24,7 @@
 		29F132FE1CDC8489006428E2 /* observer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29F132FC1CDC8489006428E2 /* observer.cpp */; };
 		29F4C15F1D1243E8005D09F6 /* norecursion_visit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29F4C15E1D1243E8005D09F6 /* norecursion_visit.cpp */; };
 		29F4C1611D127E64005D09F6 /* findAllAncestor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29F4C1601D127E64005D09F6 /* findAllAncestor.cpp */; };
+		29FC96CC1D26685100E811CA /* knapsack01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29FC96CB1D26685100E811CA /* knapsack01.cpp */; };
 		F60127601D1692A700D7513F /* Dijkstra.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F601275F1D1692A700D7513F /* Dijkstra.cpp */; };
 		F60127631D16B60500D7513F /* fibonacci.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F60127621D16B60500D7513F /* fibonacci.cpp */; };
 		F606311F1CEB74DD00F87496 /* hashtable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F606311D1CEB74B500F87496 /* hashtable.cpp */; };
@@ -96,6 +97,7 @@
 		29F132FD1CDC8489006428E2 /* pattern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pattern.h; path = pattern/pattern.h; sourceTree = "<group>"; };
 		29F4C15E1D1243E8005D09F6 /* norecursion_visit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = norecursion_visit.cpp; path = acm/btree/norecursion_visit.cpp; sourceTree = "<group>"; };
 		29F4C1601D127E64005D09F6 /* findAllAncestor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = findAllAncestor.cpp; path = acm/btree/findAllAncestor.cpp; sourceTree = "<group>"; };
+		29FC96CB1D26685100E811CA /* knapsack01.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = knapsack01.cpp; path = acm/dynamic/knapsack01.cpp; sourceTree = "<group>"; };
 		F601275F1D1692A700D7513F /* Dijkstra.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Dijkstra.cpp; sourceTree = "<group>"; };
 		F60127621D16B60500D7513F /* fibonacci.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = fibonacci.cpp; path = acm/dynamic/fibonacci.cpp; sourceTree = "<group>"; };
 		F606311D1CEB74B500F87496 /* hashtable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = hashtable.cpp; sourceTree = "<group>"; };
@@ -285,6 +287,7 @@
 			isa = PBXGroup;
 			children = (
 				F60127621D16B60500D7513F /* fibonacci.cpp */,
+				29FC96CB1D26685100E811CA /* knapsack01.cpp */,
 			);
 			name = dynamic;
 			sourceTree = "<group>";
@@ -515,6 +518,7 @@
 				29E652C11D113B9E00605F2E /* indexBtree.cpp in Sources */,
 				F64B1A111D08553E00BDF8F8 /* sort_link_list.cpp in Sources */,
 				F66A0F7A1CDE07C900D1BD06 /* heapSort.cpp in Sources */,
+				29FC96CC1D26685100E811CA /* knapsack01.cpp in Sources */,
 				F65632AA1CDEE0A800E37C1C /* quickSort.cpp in Sources */,
 				F60127601D1692A700D7513F /* Dijkstra.cpp in Sources */,
 				29EF70741D13ABCF00CC0C02 /* binarySearch.cpp in Sources */,
